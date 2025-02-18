@@ -1,3 +1,4 @@
+# mod config recipes yaml install java21.yml
 type: specs.openrewrite.org/v1beta/recipe
 name: com.ef.Java21WithMavenWrapper
 displayName: Java 21 and add/upgrade Maven Wrapper

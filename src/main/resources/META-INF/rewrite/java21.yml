@@ -1,0 +1,10 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.ef.Java21WithMavenWrapper
+displayName: Java 21 and add/upgrade Maven Wrapper
+description: These repositories are being built on CI boxes that don't always have the latest Maven binary.
+recipeList:
+  - org.openrewrite.java.migrate.UpgradeToJava21
+  - org.openrewrite.maven.UpdateMavenWrapper:
+      wrapperVersion: 3.x
+      wrapperDistribution: bin
+      addIfMissing: true

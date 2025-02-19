@@ -52,6 +52,17 @@
         </dependency>
 
         <dependency>
+            <groupId>org.openrewrite.recipe</groupId>
+            <artifactId>rewrite-terraform</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openrewrite</groupId>
+            <artifactId>rewrite-hcl</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.openrewrite</groupId>
             <artifactId>rewrite-yaml</artifactId>
         </dependency>

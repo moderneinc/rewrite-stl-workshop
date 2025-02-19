@@ -9,7 +9,7 @@ public class PubsubTopics extends DataTable<PubsubTopics.Row> {
 
     public PubsubTopics(Recipe recipe) {
         super(recipe,
-                "Pubsub topics",
+                "Pubsub topic definitions",
                 "The pubsub topics defined in terraform.");
     }
 

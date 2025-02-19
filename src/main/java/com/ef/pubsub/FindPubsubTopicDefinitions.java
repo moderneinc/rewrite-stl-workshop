@@ -1,8 +1,6 @@
 package com.ef.pubsub;
 
 import com.ef.table.PubsubTopics;
-import org.jspecify.annotations.NullMarked;
-import org.jspecify.annotations.Nullable;
 import org.openrewrite.ExecutionContext;
 import org.openrewrite.NlsRewrite;
 import org.openrewrite.Recipe;
@@ -14,12 +12,10 @@ import org.openrewrite.marker.SearchResult;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringJoiner;
-import java.util.stream.Collectors;
 
 import static java.util.Collections.emptyList;
 
-public class FindPubsubTopics extends Recipe {
+public class FindPubsubTopicDefinitions extends Recipe {
     transient PubsubTopics pubsubTopics = new PubsubTopics(this);
 
     @Override
